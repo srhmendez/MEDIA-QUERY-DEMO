@@ -4,7 +4,7 @@
 
 /* Notice that this padding is outside the media queries, because of this it carries across every screen size. It is a GLOBAL CSS rule meaning the padding is 10% on small screens, medium screens, and large screens. */
 div.colorBlock{
-    padding:10%;
+    padding:10% 10%;
 }
 
 /* Beginning of Small Screen Media Query */
