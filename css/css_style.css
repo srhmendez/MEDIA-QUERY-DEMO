@@ -1,0 +1,89 @@
+/* Beginning of Small Screens Media Query (For Mobile Phones)*/
+/* Notice there is no media query for small screens. This is the code that will carry through all the other screen sizes unless you override it in the Medium or Large Screen Media Query code. For Example, In this code below, I've changed the H1 color to  a light grey. If you change the size of the screen, it's always light grey. This is because there is no other h1 tags overriding it. Try adding a h1 tag to the medium or large screen query and changing the color to override the grey!*/
+
+
+/* Notice that this padding is outside the media queries, because of this it carries across every screen size. It is a GLOBAL CSS rule meaning the padding is 10% on small screens, medium screens, and large screens. */
+div.colorBlock{
+    padding:10%;
+}
+
+/* Beginning of Small Screen Media Query */
+@media only screen and (max-device-width:700px){
+    h1{
+        color:yellow;
+    }
+    body{
+        color:white;
+        text-align: center;
+        background-color:purple;
+        
+    }
+    p{
+        color:rgb(225, 0, 255);
+        font-size:30px;
+        padding-top:200px;
+    }
+    footer p{
+        color:yellow;
+    }
+    div.colorBlock{
+        height :500px;
+        width:50%;
+        background:white;
+        margin:0 auto;
+    }
+}
+/* End of Small Screens Code */
+
+
+
+/* Beginning of Medium Screens Media Query */
+@media only screen and (min-device-width:701px) and (max-width:1000px){
+    body{
+        background-color:yellow; /*THIS IS THE BODY COLOR FOR MEDIUM SCREENS*/
+        color:blue;
+        text-align: center; 
+    }
+    p{
+        font-size:2rem;
+        color:blue;
+        padding-top:2rem;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+    div.colorBlock{
+        height:500px;
+        width:50%;
+        background:white;
+        margin:0 auto;
+    }
+} 
+/* End of Medium Screens Media Query */
+
+
+
+/* Beginning of Large Screens Media Query */
+@media only screen and (min-device-width:1001px) and (max-width:3000px){
+    body{
+        background:blue; /*THIS IS THE BODY COLOR FOR LARGE SCREENS*/
+        color:rgb(255, 196, 0);
+        text-align: center;
+    }
+    p{  
+        padding-top:1.5rem;
+        font-size:2rem;
+        color:rgb(255, 196, 0);
+    }
+    footer p {
+        color: rgb(255, 196, 0);
+        font-size:1.5rem;
+    }
+    div.colorBlock{
+        height:500px;
+        width:50%;
+        background:white;
+        margin:0 auto;
+    }
+}
+/* End of Large Screens Media Query */
